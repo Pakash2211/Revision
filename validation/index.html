@@ -7,37 +7,34 @@
     <title>Validation</title>
 </head>
 <body>
-    <input type="text"  placeholder="Username"  id="user"/>
-    <span id="error"></span>
-    <submit onclick="checkValid()"></submit>
+    <input type="text"  placeholder="Username"  id="user" />
+    <p id="error"></p>
+    <button onclick="checkValid()">check</button>
 </body>
 </html>
 
 
 <script>
-  let user = document.getElementById('user').value;
-   let error = document.getElementById('error');
+   let user = document.getElementById("user");
+   let error = document.getElementById("error");
+   var valid = /^[A-za-z] + $/;
    function checkValid(){
       if(user.length == 0){
          error.innerText = "Write the Username";   
-         return false;
-      }
-
-      if(user.length < 3){
+      }else  if(user.length < 3){
         error.innerText = "Write the Username alteast 3 character";
-        return false;  
-      }
-
-      if(user.length > 20){
+       
+      }else if(user.length > 20){
         error.innerText = "Write the Username less than 20 character";
-        return false;
-      }
-
-      var valid = /^[A-za-z] + $/;
-
-      if(!user.match(valid)){
+        
+      }else if(valid.match(user)){
         error.innerText = "Write the Username character only";
-        return false;
+        
+      }else{
+        error.innerText = "done";
+      
       }
+
+ 
    }
 </script>
