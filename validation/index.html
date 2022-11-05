@@ -15,25 +15,8 @@
 
 
 <script>
-   let user = document.getElementById("user");
-   let error = document.getElementById("error");
-   var valid = /^[A-za-z] + $/;
-   function checkValid(){
-      if(user.length == 0){
-         error.innerText = "Write the Username";   
-      }else  if(user.length < 3){
-        error.innerText = "Write the Username alteast 3 character";
-       
-      }else if(user.length > 20){
-        error.innerText = "Write the Username less than 20 character";
-        
-      }else if(valid.match(user)){
-        error.innerText = "Write the Username character only";
-        
-      }else{
-        error.innerText = "done";
+
       
-      }
 
  
    }
