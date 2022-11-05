@@ -25,6 +25,14 @@ let user = document.getElementById("user");
       }else  if(user.length < 3){
         error.innerText = "Write the Username alteast 3 character";
        
+      }else if(user.length > 20){
+        error.innerText = "Write the Username less than 20 character";
+        
+      }else if(user.match(valid)){
+        error.innerText = "Write the Username character only";
+      }else{
+        error.innerText = "done";
+      
       }
 
  
