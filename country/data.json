@@ -1,0 +1,49 @@
+{
+  "data" : [
+
+       {
+        "id" : 1,
+        "country" : "india",
+        "city" : [
+           {
+               "id" : 1,
+                "name" : "Surat",
+                "population" : 40000,
+                 "delete" : false
+   
+           },
+           {
+               "id" : 2,
+                "name" : "Amhedabad",
+                 "population" : 50000,
+                 "delete" : false
+   
+           }
+   
+        ]
+       },
+
+       {
+        "id" : 2,
+        "country" : "USA",
+        "city" : [
+           {
+               "id" : 1,
+                "name" : "toranto",
+                "population" : 45000,
+                 "delete" : false
+   
+           },
+           {
+               "id" : 2,
+                "name" : "london",
+                 "population" : 56000,
+                 "delete" : false
+   
+           }
+   
+        ]
+       }
+   ] 
+     
+}
